@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "Asn1Data/version"
+require_relative 'asn1_data/version'
 
 module Asn1Data
   class Error < StandardError; end

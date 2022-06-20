@@ -1,0 +1,9 @@
+module Asn1Data
+  class Primitive
+    attr_reader tag: Integer
+
+    attr_reader type: String
+
+    def initialize: (tag: Integer, type: String) -> void
+  end
+end
