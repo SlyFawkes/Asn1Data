@@ -1,9 +1,22 @@
 module Asn1Data
-  class Primitive
+
+  # Type	Tag number(decimal)	Tag number(hexadecimal)
+  # INTEGER	2	02
+  # BIT STRING	3	03
+  # OCTET STRING	4	04
+  # NULL	5	05
+  # OBJECT IDENTIFIER	6	06
+  # SEQUENCE and SEQUENCE OF	16	10
+  # SET and SET OF	17	11
+  # PrintableString	19	13
+  # T61String	20	14
+  # IA5String	22	16
+  # UTCTime	23	17
+  class Element
     attr_reader tag: Integer
 
-    attr_reader type: String
+    attr_reader value: untyped
 
-    def initialize: (tag: Integer, type: String) -> void
+    def initialize: (tag: Integer, value: untyped,  ) -> void
   end
 end
