@@ -1,4 +1,0 @@
-module Asn1Data
-  class Error < StandardError
-  end
-end
